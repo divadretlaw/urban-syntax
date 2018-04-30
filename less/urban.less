@@ -55,6 +55,19 @@ atom-text-editor {
   }
 }
 
+.syntax--source {  
+  .syntax--link, .syntax--link .syntax--punctuation{
+    color: @lila;
+  }
+
+  &.syntax--less {
+    .syntax--variable.syntax--other {
+      color: @orange;
+    }
+  }
+}
+
+
 atom-text-editor .search-results .syntax--marker .region,
 atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
@@ -134,16 +147,18 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
     color: @cyan;
   }
 
-  &.syntax--other.syntax--color {
-    color: @cyan;
-  }
+  &.syntax--other {
+    &syntax--color {
+      color: @cyan;
+    }
 
-  &.syntax--other.syntax--symbol {
-    color: @cyan;
-  }
+    &.syntax--symbol {
+      color: @cyan;
+    }
 
-  &.syntax--other.syntax--placeholder {
-    color: inherit;
+    &.syntax--placeholder {
+      color: inherit;
+    }
   }
 }
 
@@ -174,6 +189,10 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   &.syntax--this {
     color: @magenta;
   }
+
+  &.syntax--list {
+    color: @yellow;
+  }
 }
 
 .syntax--invalid.syntax--illegal {
@@ -192,7 +211,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
     }
   }
 
-  &.syntax--other.syntax--link {
+  .syntax--link {
     color: @red;
   }
 }
@@ -332,7 +351,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+    color: @cyan;
     font-weight: bold;
   }
 
@@ -345,46 +364,29 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @orange;
     font-style: italic;
   }
 
-  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @lila;
+  &.syntax--heading,
+  .syntax--punctuation.syntax--definition.syntax--heading {
+    color: @cyan;
   }
 
   &.syntax--inserted {
     color: darken(@green, 12%);
   }
 
-  &.syntax--list {
-    color: @red;
-  }
-
   &.syntax--quote {
     color: @orange;
   }
 
-  &.syntax--raw.syntax--inline {
-    color: darken(@green, 12%);
-  }
-}
-
-.syntax--source.syntax--gfm .syntax--markup {
-  -webkit-font-smoothing: auto;
-
-  &.syntax--heading {
-    color: darken(@green, 12%);
+  &.syntax--raw {
+    color: @magenta;
   }
 }
 
 atom-text-editor .scroll-view,
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
-}
-
-.syntax--source.syntax--less {
-  .syntax--variable.syntax--other {
-    color: @orange;
-  }
 }
