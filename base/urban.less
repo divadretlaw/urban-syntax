@@ -1,4 +1,4 @@
-@import "syntax";
+@import "colors";
 
 atom-text-editor {
   background-color: @syntax-background-color;
@@ -58,12 +58,6 @@ atom-text-editor {
 .syntax--source {  
   .syntax--link, .syntax--link .syntax--punctuation{
     color: @lila;
-  }
-
-  &.syntax--less {
-    .syntax--variable.syntax--other {
-      color: @orange;
-    }
   }
 }
 
@@ -385,7 +379,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
   }
 
   &.syntax--inserted {
-    color: darken(@green, 12%);
+    color: @dark-green;
   }
 
   &.syntax--quote {
