@@ -1,10 +1,10 @@
 # urban-syntax
 
-![colors](https://github.com/divadretlaw/urban/raw/master/colors/colors.png)
+![colors](https://github.com/divadretlaw/urban/raw/master/assets/colors.png)
 
-Dark syntax theme inspired by Xcode's Civic theme.
+Dark themes inspired by various Xcode themes.
 
-![atom](https://user-images.githubusercontent.com/6899256/39404155-417bb7be-4b8d-11e8-9369-e191592b0f1a.png)
+![atom](https://github.com/divadretlaw/urban/raw/master/assets/atom.png)
 
 ### Installation
 
