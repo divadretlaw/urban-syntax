@@ -1,12 +1,13 @@
 {
   "name": "urban-syntax",
   "theme": "syntax",
-  "version": "1.0.5",
-  "description": "Dark syntax theme inspired by Xcode's Civic theme",
+  "version": "2.0.0",
+  "description": "Dark syntax theme inspired by Xcode themes",
   "keywords": [
     "syntax",
     "theme",
-    "dark"
+    "dark",
+    "pastel"
   ],
   "repository": "https://github.com/divadretlaw/urban-syntax",
   "license": "MIT",
